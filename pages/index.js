@@ -11,8 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Ricardo Amorim Portfolio</title>
-        <link rel='icon' href='/favicon.png'></link>
-        
+        <link rel='icon' href='/favicon.png'></link>        
       </Head>
 
       <main className='bg-gray-200 px-5 md:px-20 lg:px-40 '>
@@ -26,17 +25,17 @@ export default function Home() {
           </ul>
         </nav>
         <div className='flex items-center justify-between flex-wrap'>
-          <div className='flex py-10 items-center gap-10 mx-auto'>
+          <div className='flex py-10 items-center gap-5 mx-auto'>
             <div>
               <div className='w-32 h-32 bg-purple-600 rounded-full'></div>
             </div>
             <div>
-              <h1 className='font-poppins font-bold text-2xl text-purple-600'>Ricardo Amorim</h1>
+              <h1 className='font-poppins font-bold text-xl text-purple-600'>Ricardo Amorim</h1>
               <h2 className='font-inter text-gray-700'>Front-end junior JS Developer.</h2>
-              <div className='flex items-center gap-10 text-3xl mt-3 text-gray-800'>
-                <a href="#"><FaGithub/></a>
-                <a href="#"><FaLinkedin/></a>
-                <a f href="#"><FaEnvelope/></a>
+              <div className='flex items-center gap-10 mt-3 text-gray-800'>
+                <a href="#"><FaGithub className='text-xl'/></a>
+                <a href="#"><FaLinkedin className='text-xl'/></a>
+                <a href="#"><FaEnvelope className='text-xl'/></a>
               </div>
             </div>
           </div>

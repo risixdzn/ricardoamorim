@@ -12,13 +12,13 @@ module.exports = {
     extend: {
       brightness:{
         15: '.15',
-      }
-      
+      }      
     },
+
     fontFamily:{
       poppins: ["Poppins"],
       inter: ["Inter"],
-    }
+    },    
   },
   plugins: [],
 }
