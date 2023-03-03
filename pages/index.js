@@ -88,7 +88,7 @@ export default function Home() {
           </div>          
         </div>
         <h1 className='mt-8 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl'><BsLightbulbFill/>Projects</h1>
-        <div className='mt-8 h-40 w-full bg-amber-700 flex items-center gap-2 flex-wrap'></div>       
+        <div className='mt-8 h-40 w-full bg-gray-600 flex items-center gap-2 flex-wrap'></div>       
       </main>
       
     </div>
