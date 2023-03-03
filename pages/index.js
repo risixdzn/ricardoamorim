@@ -49,7 +49,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className='font-poppins font-bold text-xl text-purple-600 lg:text-4xl'>Ricardo Amorim</h1>
-              <h2 className='font-inter text-gray-700 lg:text-lg'>Front-end junior JS Developer.</h2>
+              <h2 className='font-inter text-gray-700 lg:text-lg'>Junior front-end JS Developer.</h2>
               <div className='flex items-center gap-10 mt-3 text-gray-800'>
                 <a href="#"><FaGithub className='text-xl lg:text-3xl'/></a>
                 <a href="#"><FaLinkedin className='text-xl lg:text-3xl'/></a>
