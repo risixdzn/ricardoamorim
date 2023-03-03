@@ -6,7 +6,7 @@ import gradient from '../public/gradient.png'
 
 import {BsFillMoonStarsFill, BsLightbulbFill} from 'react-icons/bs'
 import { FaGithub , FaLinkedin , FaEnvelope } from "react-icons/fa";
-import { SiAdobeillustrator, SiCss3, SiFigma, SiFirebase, SiFramer, SiHtml5, SiJavascript, SiNextdotjs, SiAdobephotoshop, SiReact, SiSass, SiTailwindcss, SiTypescript, SiVercel, SiJava } from "react-icons/si";
+import { SiAdobeillustrator, SiCss3, SiFigma, SiFirebase, SiFramer, SiHtml5, SiJavascript, SiNextdotjs, SiAdobephotoshop, SiReact, SiSass, SiTailwindcss, SiTypescript, SiVercel, SiGithub } from "react-icons/si";
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 import ai from '../public/techs/ai.png'
@@ -32,7 +32,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.png'></link>        
       </Head>
 
-      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center' >
+      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center lg:px-52' >
         <nav className='flex justify-between py-2 my-auto'>
           <div>
             <Image className='filter brightness-15' src={logowhite}></Image>
@@ -88,9 +88,23 @@ export default function Home() {
           </div>          
         </div>
         <h1 className='mt-8 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl'><BsLightbulbFill/>Projects</h1>
-        <div className='mt-8 h-40 w-full bg-gray-600 flex items-center gap-2 flex-wrap'></div>       
-      </main>
-      
+        <div className='grid md:grid-cols-2 gap-8 mt-8'>
+          <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400'>
+            <div className='flex items-center py-5 px-10 justify-between'>
+              <div>
+                <h1 className='text-white font-poppins font-bold text-xl'>EsfihasDash</h1>
+                <h2 className='text-gray-800 font-inter text-base'>Order management react webapp.</h2>
+              </div>
+              <div>
+                <SiGithub className='text-2xl text-white'/>
+              </div>
+            </div>
+            <div className='w-full h-52 bg-esfihasdash bg-center bg-cover rounded-b-md'>              
+            </div>
+          </div>
+          <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400'>a</div>
+        </div>       
+      </main>      
     </div>
   )
 }

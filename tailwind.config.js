@@ -16,6 +16,7 @@ module.exports = {
 
       backgroundImage: {
         'gradient_bg' : "url('https://imgur.com/Po0PkKS.png')",
+        'esfihasdash' : "url('https://imgur.com/k1QU14i.png')",
       }    
     },
 
