@@ -24,22 +24,27 @@ import tailwind from '../public/techs/tailwind.png'
 import ts from '../public/techs/ts.png'
 import vercel from '../public/techs/vercel.png'
 
+import {useState} from 'react';
+
 export default function Home() {
+
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <div>
+    <div className={darkMode ? 'dark' : ""}>
       <Head>
         <title>Portfolio - Ricardo A.</title>
         <link rel='icon' href='/favicon.png'></link>        
       </Head>
 
-      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center lg:px-52' >
+      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center lg:px-52 dark:bg-neutral-900' >
         <nav className='flex justify-between py-2 my-auto'>
           <div>
-            <Image className='filter brightness-15' src={logowhite}></Image>
+            <Image className='filter brightness-15 dark:filter dark:brightness-100' src={logowhite}></Image>
           </div>
           <ul className='flex items-center'>
-            <li className='text-xl'><BsFillMoonStarsFill/></li>
-            <li><a className='bg-gradient-to-r from-purple-600 to-purple-500 px-5 py-2 ml-6 text-white font-poppins font-semibold border rounded-md' href='#'>Contact</a></li>
+            <li className='text-xl'><BsFillMoonStarsFill className='dark:text-white' onClick={()=> setDarkMode(!darkMode)}/></li>
+            <li><a className='bg-gradient-to-r from-purple-600 to-purple-500 px-5 py-2 ml-6 text-white font-poppins font-semibold border rounded-md dark:border-none' href='#'>Contact</a></li>
           </ul>
         </nav>
         <div className='flex items-center justify-between flex-wrap'>
@@ -49,8 +54,8 @@ export default function Home() {
             </div>
             <div>
               <h1 className='font-poppins font-bold text-xl text-purple-600 lg:text-4xl'>Ricardo Amorim</h1>
-              <h2 className='font-inter text-gray-700 lg:text-lg'>Junior front-end JS Developer.</h2>
-              <div className='flex items-center gap-10 mt-3 text-gray-800'>
+              <h2 className='font-inter text-gray-700 lg:text-lg dark:text-neutral-300'>Junior front-end JS Developer.</h2>
+              <div className='flex items-center gap-10 mt-3 text-gray-800 dark:text-neutral-200'>
                 <a href="#"><FaGithub className='text-xl lg:text-3xl'/></a>
                 <a href="#"><FaLinkedin className='text-xl lg:text-3xl'/></a>
                 <a href="#"><FaEnvelope className='text-xl lg:text-3xl'/></a>
@@ -58,7 +63,7 @@ export default function Home() {
             </div>
           </div>
           <div className='flex mx-auto flex-col max-w-sm text-justify '>
-            <h2 className='font-inter text-gray-900 lg:text-lg'>I’m a brazilian student, enthusiast in front-end development. Currently seeking for establishing a career in web development.</h2>
+            <h2 className='font-inter text-gray-900 lg:text-lg dark:text-neutral-400'>I’m a brazilian student, enthusiast in front-end development. Currently seeking for establishing a career in web development.</h2>
             <a className='bg-gradient-to-r from-purple-600 to-purple-500 px-5 py-2 w-28 text-center mt-3 text-white font-poppins font-semibold border rounded-md border-none' href='#'>Projects</a>
           </div>
         </div>
