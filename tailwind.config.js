@@ -12,13 +12,18 @@ module.exports = {
     extend: {
       brightness:{
         15: '.15',
-      }      
+      },
+
+      backgroundImage: {
+        'gradient_bg' : "url('../public/gradient.png')",
+      }    
     },
 
     fontFamily:{
       poppins: ["Poppins"],
       inter: ["Inter"],
-    },    
+    },  
+    
   },
   plugins: [],
 }
