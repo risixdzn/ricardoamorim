@@ -4,7 +4,7 @@ import Image from 'next/image'
 import logowhite from '../public/logowhite.png'
 import gradient from '../public/gradient.png'
 
-import {BsFillMoonStarsFill,} from 'react-icons/bs'
+import {BsFillMoonStarsFill, BsLightbulbFill} from 'react-icons/bs'
 import { FaGithub , FaLinkedin , FaEnvelope } from "react-icons/fa";
 import { SiAdobeillustrator, SiCss3, SiFigma, SiFirebase, SiFramer, SiHtml5, SiJavascript, SiNextdotjs, SiAdobephotoshop, SiReact, SiSass, SiTailwindcss, SiTypescript, SiVercel, SiJava } from "react-icons/si";
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -32,7 +32,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.png'></link>        
       </Head>
 
-      <main className='bg-gray-200 px-5 md:px-20 bg-gradient_bg bg-no-repeat bg-center' >
+      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center' >
         <nav className='flex justify-between py-2 my-auto'>
           <div>
             <Image className='filter brightness-15' src={logowhite}></Image>
@@ -62,31 +62,33 @@ export default function Home() {
             <a className='bg-gradient-to-r from-purple-600 to-purple-500 px-5 py-2 w-28 text-center mt-3 text-white font-poppins font-semibold border rounded-md border-none' href='#'>Projects</a>
           </div>
         </div>
-        <div className='mt-16 h-auto w-full bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 px-10 py-10 lg:px-28'>
-          <div className='mx-auto'>
-            <h1 className='font-poppins font-bold text-white text-xl flex items-center gap-2'><GiHamburgerMenu/> Technologies</h1>
+        <h1 className='mt-16 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl'><GiHamburgerMenu/> Technologies</h1>
+        <div className='mt-8 h-auto w-full bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 px-10 py-10 lg:px-28'>
+          <div className='mx-auto'>            
             <div className='grid md:grid-cols-2 gap-8'>   
-              <div className='mt-10 grid grid-cols-3 gap-8 place-items-center'>
-                <SiHtml5 className='text-4xl drop-shadow-lg text-orange-600'/>
-                <SiCss3 className='text-4xl drop-shadow-lg text-blue-600'/>
-                <SiJavascript className='text-4xl drop-shadow-lg text-yellow-500'/>
-                <SiTypescript className='text-4xl drop-shadow-lg text-blue-700'/>
-                <SiReact className='text-4xl drop-shadow-lg text-cyan-500'/>
-                <SiNextdotjs className='text-4xl drop-shadow-lg text-gray-900'/>
-                <SiFigma className='text-4xl drop-shadow-lg text-white'/>
+              <div className=' grid grid-cols-3 gap-8 place-items-center'>
+                <SiHtml5 className='text-4xl drop-shadow-lg text-orange-600 lg:text-5xl'/>
+                <SiCss3 className='text-4xl drop-shadow-lg text-blue-600 lg:text-5xl'/>
+                <SiJavascript className='text-4xl drop-shadow-lg text-yellow-500 lg:text-5xl'/>
+                <SiTypescript className='text-4xl drop-shadow-lg text-blue-700 lg:text-5xl'/>
+                <SiReact className='text-4xl drop-shadow-lg text-cyan-500 lg:text-5xl'/>
+                <SiNextdotjs className='text-4xl drop-shadow-lg text-gray-900 lg:text-5xl'/>
+                <SiFigma className='text-4xl drop-shadow-lg text-white lg:text-5xl'/>
               </div>
-              <div className='mt-10 grid grid-cols-3 gap-8 place-items-center'>
-                <SiTailwindcss className='text-4xl drop-shadow-lg text-cyan-500'/>
-                <SiSass className='text-4xl drop-shadow-lg text-pink-500'/>
-                <SiFirebase className='text-4xl drop-shadow-lg text-yellow-500'/>
-                <SiFramer className='text-4xl drop-shadow-lg text-indigo-500'/>
-                <SiVercel className='text-4xl drop-shadow-lg text-white'/>
-                <SiAdobephotoshop className='text-4xl drop-shadow-lg text-blue-600'/>
-                <SiAdobeillustrator className='text-4xl drop-shadow-lg text-orange-600'/>
+              <div className=' grid grid-cols-3 gap-8 place-items-center'>
+                <SiTailwindcss className='text-4xl drop-shadow-lg text-cyan-500 lg:text-5xl'/>
+                <SiSass className='text-4xl drop-shadow-lg text-pink-500 lg:text-5xl'/>
+                <SiFirebase className='text-4xl drop-shadow-lg text-yellow-500 lg:text-5xl'/>
+                <SiFramer className='text-4xl drop-shadow-lg text-indigo-500 lg:text-5xl'/>
+                <SiVercel className='text-4xl drop-shadow-lg text-white lg:text-5xl'/>
+                <SiAdobephotoshop className='text-4xl drop-shadow-lg text-blue-600 lg:text-5xl'/>
+                <SiAdobeillustrator className='text-4xl drop-shadow-lg text-orange-600 lg:text-5xl'/>
               </div>
             </div>
           </div>          
-        </div>       
+        </div>
+        <h1 className='mt-8 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl'><BsLightbulbFill/>Projects</h1>
+        <div className='mt-8 h-40 w-full bg-amber-700 flex items-center gap-2 flex-wrap'></div>       
       </main>
       
     </div>
