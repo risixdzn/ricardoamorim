@@ -64,11 +64,11 @@ export default function Home() {
           </div>
           <div className='flex mx-auto flex-col max-w-sm text-justify '>
             <h2 className='font-inter text-gray-900 lg:text-lg dark:text-neutral-400'>I’m a brazilian student, enthusiast in front-end development. Currently seeking for establishing a career in web development.</h2>
-            <a className='bg-gradient-to-r from-purple-600 to-purple-500 px-5 py-2 w-28 text-center mt-3 text-white font-poppins font-semibold border rounded-md border-none' href='#'>Projects</a>
+            <a className='bg-gradient-to-r from-purple-600 to-purple-500 px-5 py-2 w-28 text-center mt-3 text-white font-poppins font-semibold border rounded-md border-none' href='#projects'>Projects</a>
           </div>
         </div>
-        <h1 className='mt-16 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl'><GiHamburgerMenu/> Technologies</h1>
-        <div className='mt-8 h-auto w-full bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 px-10 py-10 lg:px-28'>
+        <h1 className='mt-16 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl dark:text-white'><GiHamburgerMenu/> Technologies</h1>
+        <div className='mt-8 h-auto w-full bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 px-10 py-10 lg:px-28 dark:bg-gray-200 dark:rounded-md dark:bg-clip-padding dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-10 dark:border dark:border-gray-500 '>
           <div className='mx-auto'>            
             <div className='grid md:grid-cols-2 gap-8'>   
               <div className=' grid grid-cols-3 gap-8 place-items-center'>
@@ -77,7 +77,7 @@ export default function Home() {
                 <SiJavascript className='text-4xl drop-shadow-lg text-yellow-500 lg:text-5xl'/>
                 <SiTypescript className='text-4xl drop-shadow-lg text-blue-700 lg:text-5xl'/>
                 <SiReact className='text-4xl drop-shadow-lg text-cyan-500 lg:text-5xl'/>
-                <SiNextdotjs className='text-4xl drop-shadow-lg text-gray-900 lg:text-5xl'/>
+                <SiNextdotjs className='text-4xl drop-shadow-lg text-neutral-900 lg:text-5xl'/>
                 <SiFigma className='text-4xl drop-shadow-lg text-white lg:text-5xl'/>
               </div>
               <div className=' grid grid-cols-3 gap-8 place-items-center'>
@@ -92,22 +92,34 @@ export default function Home() {
             </div>
           </div>          
         </div>
-        <h1 className='mt-8 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl'><BsLightbulbFill/>Projects</h1>
-        <div className='grid md:grid-cols-2 gap-8 mt-8'>
-          <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400'>
+        <h1 className='mt-8 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl dark:text-white'><BsLightbulbFill/>Projects</h1>
+        <div className='grid md:grid-cols-2 gap-8 mt-8' id='#projects'>
+          <a>
+            <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 dark:bg-gray-200 dark:rounded-md dark:bg-clip-padding dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-10 dark:border dark:border-gray-500'>
+              <div className='flex items-center py-5 px-10 justify-between'>
+                <div>
+                  <h1 className='text-white font-poppins font-bold text-xl'>EsfihasDash</h1>
+                  <h2 className='text-gray-800 font-inter text-base dark:text-gray-400'>Order management react webapp.</h2>
+                </div>
+                <div>
+                  <SiGithub className='text-2xl text-white'/>
+                </div>
+              </div>
+              <div className='w-full h-52 bg-esfihasdash bg-center bg-cover rounded-b-md sm:h-60 lg:h-72'></div>
+            </div>
+          </a>
+          <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 dark:bg-gray-200 dark:rounded-md dark:bg-clip-padding dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-10 dark:border dark:border-gray-500'>
             <div className='flex items-center py-5 px-10 justify-between'>
               <div>
-                <h1 className='text-white font-poppins font-bold text-xl'>EsfihasDash</h1>
-                <h2 className='text-gray-800 font-inter text-base'>Order management react webapp.</h2>
+                <h1 className='text-white font-poppins font-bold text-xl'>Portfolio</h1>
+                <h2 className='text-gray-800 font-inter text-base dark:text-gray-400'>Made with Next.js and Tailwind.</h2>
               </div>
               <div>
                 <SiGithub className='text-2xl text-white'/>
               </div>
             </div>
-            <div className='w-full h-52 bg-esfihasdash bg-center bg-cover rounded-b-md'>              
-            </div>
-          </div>
-          <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400'>a</div>
+            <div className='w-full h-52 bg-portfolio bg-center bg-cover rounded-b-md sm:h-60 lg:h-72'></div>
+          </div>          
         </div>       
       </main>      
     </div>
