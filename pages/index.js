@@ -56,9 +56,9 @@ export default function Home() {
               <h1 className='font-poppins font-bold text-xl text-purple-600 lg:text-4xl'>Ricardo Amorim</h1>
               <h2 className='font-inter text-gray-700 lg:text-lg dark:text-neutral-300'>Junior front-end JS Developer.</h2>
               <div className='flex items-center gap-10 mt-3 text-gray-800 dark:text-neutral-200'>
-                <a href="#"><FaGithub className='text-xl lg:text-3xl'/></a>
-                <a href="#"><FaLinkedin className='text-xl lg:text-3xl'/></a>
-                <a href="#"><FaEnvelope className='text-xl lg:text-3xl'/></a>
+                <a href="https://github.com/risixdzn" target='_blank'><FaGithub className='text-xl lg:text-3xl'/></a>
+                <a href="https://linkedin.com" target='_blank'><FaLinkedin className='text-xl lg:text-3xl'/></a>
+                <a href="mailto:contatorisix@gmail.com"><FaEnvelope className='text-xl lg:text-3xl'/></a>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
         </div>
         <h1 className='mt-8 px-3 font-poppins font-bold text-gray-600 text-xl flex items-center gap-2 lg:text-2xl dark:text-white'><BsLightbulbFill/>Projects</h1>
         <div className='grid md:grid-cols-2 gap-8 mt-8' id='#projects'>
-          <a>
+          <a href='https://github.com/risixdzn/esfihasdash' target='_blank'> 
             <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 dark:bg-gray-200 dark:rounded-md dark:bg-clip-padding dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-10 dark:border dark:border-gray-500'>
               <div className='flex items-center py-5 px-10 justify-between'>
                 <div>
@@ -108,18 +108,21 @@ export default function Home() {
               <div className='w-full h-52 bg-esfihasdash bg-center bg-cover rounded-b-md sm:h-60 lg:h-72'></div>
             </div>
           </a>
-          <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 dark:bg-gray-200 dark:rounded-md dark:bg-clip-padding dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-10 dark:border dark:border-gray-500'>
-            <div className='flex items-center py-5 px-10 justify-between'>
-              <div>
-                <h1 className='text-white font-poppins font-bold text-xl'>Portfolio</h1>
-                <h2 className='text-gray-800 font-inter text-base dark:text-gray-400'>Made with Next.js and Tailwind.</h2>
+          <a href='https://github.com/risixdzn/ricardoamorim' target='_blank' >
+            <div className='basis-1/3 flex-1 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-400 dark:bg-gray-200 dark:rounded-md dark:bg-clip-padding dark:backdrop-filter dark:backdrop-blur-sm dark:bg-opacity-10 dark:border dark:border-gray-500'>
+              <div className='flex items-center py-5 px-10 justify-between'>
+                <div>
+                  <h1 className='text-white font-poppins font-bold text-xl'>Portfolio</h1>
+                  <h2 className='text-gray-800 font-inter text-base dark:text-gray-400'>Made with Next.js and Tailwind.</h2>
+                </div>
+                <div>
+                  <SiGithub className='text-2xl text-white'/>
+                </div>
               </div>
-              <div>
-                <SiGithub className='text-2xl text-white'/>
-              </div>
-            </div>
-            <div className='w-full h-52 bg-portfolio bg-center bg-cover rounded-b-md sm:h-60 lg:h-72'></div>
-          </div>          
+              <div className='w-full h-52 bg-portfolio bg-center bg-cover rounded-b-md sm:h-60 lg:h-72'></div>
+            </div> 
+          </a>
+                   
         </div>       
       </main>      
     </div>
