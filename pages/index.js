@@ -39,7 +39,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.png'></link>        
       </Head>
 
-      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center lg:px-52 dark:bg-neutral-900' >
+      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center lg:px-52 scrollbar-thin scrollbar-thumb-purple-600 scrollbar-track-neutral-900 h-screen overflow-y-scroll dark:bg-neutral-900 dark:scrollbar-track-gray-200' >
         <nav className='flex justify-between py-2 my-auto'>
           <div>
             <Image className='filter brightness-15 dark:filter dark:brightness-100' src={logowhite}></Image>
