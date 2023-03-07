@@ -39,7 +39,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.png'></link>        
       </Head>
 
-      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center lg:px-52 scrollbar-thin scrollbar-thumb-purple-600 scrollbar-track-neutral-900 h-screen overflow-y-scroll dark:bg-neutral-900 dark:scrollbar-track-gray-200' >
+      <main className='bg-gray-200 px-5 pb-16 md:px-20 bg-gradient_bg bg-no-repeat bg-center lg:px-52 scrollbar-thin scrollbar-thumb-purple-600 scrollbar-track-gray-200 h-screen overflow-y-scroll dark:bg-neutral-900 dark:scrollbar-track-neutral-900' >
         <nav className='flex justify-between py-2 my-auto'>
           <div>
             <Image className='filter brightness-15 dark:filter dark:brightness-100' src={logowhite}></Image>
@@ -52,7 +52,7 @@ export default function Home() {
         <div className='flex items-center justify-between flex-wrap'>
           <div className='flex py-10 items-center gap-5 mx-auto'>
             <div>
-              <div className='w-32 h-32 bg-purple-600 rounded-full lg:w-40 lg:h-40'></div>
+              <div className='w-32 h-32 bg-pfp bg-center bg-cover border-4 border-purple-600 rounded-full lg:w-40 lg:h-40'></div>
             </div>
             <div>
               <h1 className='font-poppins font-bold text-xl text-purple-600 lg:text-4xl'>Ricardo Amorim</h1>
